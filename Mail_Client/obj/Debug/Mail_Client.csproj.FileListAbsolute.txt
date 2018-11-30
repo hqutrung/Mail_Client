@@ -16,3 +16,4 @@ C:\Users\COMPUTER\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client
 C:\Users\COMPUTER\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.Form1.resources
 C:\Users\COMPUTER\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.Properties.Resources.resources
 C:\Users\COMPUTER\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csproj.GenerateResource.Cache
+C:\Users\COMPUTER\Documents\GitHub\Mail_Client\Mail_Client\bin\Debug\S22.Imap.dll
