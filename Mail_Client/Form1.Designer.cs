@@ -28,243 +28,287 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.txtAttachment = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtBody = new System.Windows.Forms.Label();
-            this.txtSubject = new System.Windows.Forms.Label();
-            this.txtRecipient = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rtxtReceive = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.gbReceive = new System.Windows.Forms.GroupBox();
+            this.gbSend = new System.Windows.Forms.GroupBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtTo = new System.Windows.Forms.TextBox();
+            this.txtSubject = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.rtbBody = new System.Windows.Forms.RichTextBox();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.lbPassword = new System.Windows.Forms.Label();
+            this.lbTo = new System.Windows.Forms.Label();
+            this.lbSubject = new System.Windows.Forms.Label();
+            this.btnMailList = new System.Windows.Forms.Button();
+            this.txtFile = new System.Windows.Forms.TextBox();
+            this.lbFile = new System.Windows.Forms.Label();
+            this.btnAttach = new System.Windows.Forms.Button();
+            this.lbBody = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnReceive = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.gbReceive.SuspendLayout();
+            this.gbSend.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // splitContainer1
             // 
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.txtAttachment);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.txtBody);
-            this.groupBox1.Controls.Add(this.txtSubject);
-            this.groupBox1.Controls.Add(this.txtRecipient);
-            this.groupBox1.Controls.Add(this.txtPassword);
-            this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Location = new System.Drawing.Point(43, 9);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(381, 599);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Send";
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // button3
+            // splitContainer1.Panel1
             // 
-            this.button3.Location = new System.Drawing.Point(256, 233);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 32;
-            this.button3.Text = "Browse";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.splitContainer1.Panel1.Controls.Add(this.gbSend);
             // 
-            // textBox7
+            // splitContainer1.Panel2
             // 
-            this.textBox7.Location = new System.Drawing.Point(44, 205);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(287, 22);
-            this.textBox7.TabIndex = 31;
+            this.splitContainer1.Panel2.Controls.Add(this.gbReceive);
+            this.splitContainer1.Size = new System.Drawing.Size(825, 520);
+            this.splitContainer1.SplitterDistance = 398;
+            this.splitContainer1.TabIndex = 0;
             // 
-            // txtAttachment
+            // gbReceive
             // 
-            this.txtAttachment.AutoSize = true;
-            this.txtAttachment.Location = new System.Drawing.Point(41, 185);
-            this.txtAttachment.Name = "txtAttachment";
-            this.txtAttachment.Size = new System.Drawing.Size(108, 17);
-            this.txtAttachment.TabIndex = 30;
-            this.txtAttachment.Text = "Add Attachment";
+            this.gbReceive.Controls.Add(this.btnReceive);
+            this.gbReceive.Controls.Add(this.richTextBox1);
+            this.gbReceive.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbReceive.Location = new System.Drawing.Point(0, 0);
+            this.gbReceive.Name = "gbReceive";
+            this.gbReceive.Size = new System.Drawing.Size(423, 520);
+            this.gbReceive.TabIndex = 1;
+            this.gbReceive.TabStop = false;
+            this.gbReceive.Text = "Receive";
             // 
-            // button1
+            // gbSend
             // 
-            this.button1.Location = new System.Drawing.Point(123, 534);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 32);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Send";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(44, 276);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(287, 239);
-            this.textBox5.TabIndex = 28;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(44, 160);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(287, 22);
-            this.textBox4.TabIndex = 27;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(44, 115);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(287, 22);
-            this.textBox3.TabIndex = 26;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(120, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(211, 22);
-            this.textBox2.TabIndex = 25;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(120, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 22);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "trananhthang881999@gmail.com";
-            // 
-            // txtBody
-            // 
-            this.txtBody.AutoSize = true;
-            this.txtBody.Location = new System.Drawing.Point(41, 256);
-            this.txtBody.Name = "txtBody";
-            this.txtBody.Size = new System.Drawing.Size(44, 17);
-            this.txtBody.TabIndex = 23;
-            this.txtBody.Text = "Body:";
-            // 
-            // txtSubject
-            // 
-            this.txtSubject.AutoSize = true;
-            this.txtSubject.Location = new System.Drawing.Point(41, 140);
-            this.txtSubject.Name = "txtSubject";
-            this.txtSubject.Size = new System.Drawing.Size(59, 17);
-            this.txtSubject.TabIndex = 22;
-            this.txtSubject.Text = "Subject:";
-            // 
-            // txtRecipient
-            // 
-            this.txtRecipient.AutoSize = true;
-            this.txtRecipient.Location = new System.Drawing.Point(41, 95);
-            this.txtRecipient.Name = "txtRecipient";
-            this.txtRecipient.Size = new System.Drawing.Size(71, 17);
-            this.txtRecipient.TabIndex = 21;
-            this.txtRecipient.Text = "Recipient:";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.AutoSize = true;
-            this.txtPassword.Location = new System.Drawing.Point(41, 60);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(73, 17);
-            this.txtPassword.TabIndex = 20;
-            this.txtPassword.Text = "Password:";
+            this.gbSend.Controls.Add(this.lbBody);
+            this.gbSend.Controls.Add(this.btnAttach);
+            this.gbSend.Controls.Add(this.lbFile);
+            this.gbSend.Controls.Add(this.txtFile);
+            this.gbSend.Controls.Add(this.btnMailList);
+            this.gbSend.Controls.Add(this.lbSubject);
+            this.gbSend.Controls.Add(this.lbTo);
+            this.gbSend.Controls.Add(this.lbPassword);
+            this.gbSend.Controls.Add(this.lbEmail);
+            this.gbSend.Controls.Add(this.btnSend);
+            this.gbSend.Controls.Add(this.rtbBody);
+            this.gbSend.Controls.Add(this.txtPassword);
+            this.gbSend.Controls.Add(this.txtSubject);
+            this.gbSend.Controls.Add(this.txtTo);
+            this.gbSend.Controls.Add(this.txtEmail);
+            this.gbSend.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbSend.Location = new System.Drawing.Point(0, 0);
+            this.gbSend.Name = "gbSend";
+            this.gbSend.Size = new System.Drawing.Size(398, 520);
+            this.gbSend.TabIndex = 0;
+            this.gbSend.TabStop = false;
+            this.gbSend.Text = "Send";
             // 
             // txtEmail
             // 
-            this.txtEmail.AutoSize = true;
-            this.txtEmail.Location = new System.Drawing.Point(41, 27);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(149, 33);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(46, 17);
-            this.txtEmail.TabIndex = 19;
-            this.txtEmail.Text = "Email:";
+            this.txtEmail.Size = new System.Drawing.Size(211, 21);
+            this.txtEmail.TabIndex = 0;
             // 
-            // openFileDialog1
+            // txtTo
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.txtTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTo.Location = new System.Drawing.Point(43, 127);
+            this.txtTo.Name = "txtTo";
+            this.txtTo.Size = new System.Drawing.Size(272, 21);
+            this.txtTo.TabIndex = 1;
             // 
-            // button2
+            // txtSubject
             // 
-            this.button2.Location = new System.Drawing.Point(177, 529);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 32);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Receive";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.txtSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubject.Location = new System.Drawing.Point(43, 176);
+            this.txtSubject.Name = "txtSubject";
+            this.txtSubject.Size = new System.Drawing.Size(272, 21);
+            this.txtSubject.TabIndex = 2;
             // 
-            // groupBox2
+            // txtPassword
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.rtxtReceive);
-            this.groupBox2.Location = new System.Drawing.Point(447, 9);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(500, 599);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Receive";
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(149, 59);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(211, 21);
+            this.txtPassword.TabIndex = 6;
             // 
-            // rtxtReceive
+            // rtbBody
             // 
-            this.rtxtReceive.Location = new System.Drawing.Point(6, 21);
-            this.rtxtReceive.Multiline = true;
-            this.rtxtReceive.Name = "rtxtReceive";
-            this.rtxtReceive.Size = new System.Drawing.Size(488, 488);
-            this.rtxtReceive.TabIndex = 16;
+            this.rtbBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbBody.Location = new System.Drawing.Point(43, 320);
+            this.rtbBody.Name = "rtbBody";
+            this.rtbBody.Size = new System.Drawing.Size(317, 143);
+            this.rtbBody.TabIndex = 7;
+            this.rtbBody.Text = "";
+            // 
+            // btnSend
+            // 
+            this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.Location = new System.Drawing.Point(176, 485);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(75, 23);
+            this.btnSend.TabIndex = 8;
+            this.btnSend.Text = "Send";
+            this.btnSend.UseVisualStyleBackColor = true;
+            // 
+            // lbEmail
+            // 
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.Location = new System.Drawing.Point(40, 36);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(42, 15);
+            this.lbEmail.TabIndex = 9;
+            this.lbEmail.Text = "Email:";
+            // 
+            // lbPassword
+            // 
+            this.lbPassword.AutoSize = true;
+            this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPassword.Location = new System.Drawing.Point(40, 62);
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(64, 15);
+            this.lbPassword.TabIndex = 10;
+            this.lbPassword.Text = "Password:";
+            // 
+            // lbTo
+            // 
+            this.lbTo.AutoSize = true;
+            this.lbTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTo.Location = new System.Drawing.Point(40, 111);
+            this.lbTo.Name = "lbTo";
+            this.lbTo.Size = new System.Drawing.Size(24, 15);
+            this.lbTo.TabIndex = 11;
+            this.lbTo.Text = "To:";
+            // 
+            // lbSubject
+            // 
+            this.lbSubject.AutoSize = true;
+            this.lbSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSubject.Location = new System.Drawing.Point(40, 160);
+            this.lbSubject.Name = "lbSubject";
+            this.lbSubject.Size = new System.Drawing.Size(51, 15);
+            this.lbSubject.TabIndex = 12;
+            this.lbSubject.Text = "Subject:";
+            // 
+            // btnMailList
+            // 
+            this.btnMailList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMailList.Location = new System.Drawing.Point(321, 125);
+            this.btnMailList.Name = "btnMailList";
+            this.btnMailList.Size = new System.Drawing.Size(75, 23);
+            this.btnMailList.TabIndex = 13;
+            this.btnMailList.Text = "Mail List";
+            this.btnMailList.UseVisualStyleBackColor = true;
+            // 
+            // txtFile
+            // 
+            this.txtFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFile.Location = new System.Drawing.Point(43, 256);
+            this.txtFile.Name = "txtFile";
+            this.txtFile.Size = new System.Drawing.Size(272, 21);
+            this.txtFile.TabIndex = 14;
+            // 
+            // lbFile
+            // 
+            this.lbFile.AutoSize = true;
+            this.lbFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFile.Location = new System.Drawing.Point(40, 240);
+            this.lbFile.Name = "lbFile";
+            this.lbFile.Size = new System.Drawing.Size(30, 15);
+            this.lbFile.TabIndex = 15;
+            this.lbFile.Text = "File:";
+            // 
+            // btnAttach
+            // 
+            this.btnAttach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAttach.Location = new System.Drawing.Point(321, 256);
+            this.btnAttach.Name = "btnAttach";
+            this.btnAttach.Size = new System.Drawing.Size(75, 23);
+            this.btnAttach.TabIndex = 16;
+            this.btnAttach.Text = "Attach";
+            this.btnAttach.UseVisualStyleBackColor = true;
+            // 
+            // lbBody
+            // 
+            this.lbBody.AutoSize = true;
+            this.lbBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBody.Location = new System.Drawing.Point(41, 304);
+            this.lbBody.Name = "lbBody";
+            this.lbBody.Size = new System.Drawing.Size(37, 15);
+            this.lbBody.TabIndex = 17;
+            this.lbBody.Text = "Body:";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(20, 33);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(380, 430);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
+            // btnReceive
+            // 
+            this.btnReceive.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReceive.Location = new System.Drawing.Point(189, 485);
+            this.btnReceive.Name = "btnReceive";
+            this.btnReceive.Size = new System.Drawing.Size(75, 23);
+            this.btnReceive.TabIndex = 9;
+            this.btnReceive.Text = "Receive";
+            this.btnReceive.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 623);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientSize = new System.Drawing.Size(825, 520);
+            this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.gbReceive.ResumeLayout(false);
+            this.gbSend.ResumeLayout(false);
+            this.gbSend.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label txtAttachment;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label txtBody;
-        private System.Windows.Forms.Label txtSubject;
-        private System.Windows.Forms.Label txtRecipient;
-        private System.Windows.Forms.Label txtPassword;
-        private System.Windows.Forms.Label txtEmail;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox rtxtReceive;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.GroupBox gbSend;
+        private System.Windows.Forms.Label lbBody;
+        private System.Windows.Forms.Button btnAttach;
+        private System.Windows.Forms.Label lbFile;
+        private System.Windows.Forms.TextBox txtFile;
+        private System.Windows.Forms.Button btnMailList;
+        private System.Windows.Forms.Label lbSubject;
+        private System.Windows.Forms.Label lbTo;
+        private System.Windows.Forms.Label lbPassword;
+        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.RichTextBox rtbBody;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtSubject;
+        private System.Windows.Forms.TextBox txtTo;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.GroupBox gbReceive;
+        private System.Windows.Forms.Button btnReceive;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
