@@ -7,3 +7,12 @@ D:\LTTQ\Mail_Client\Mail_Client\obj\Debug\Mail_Client.Properties.Resources.resou
 D:\LTTQ\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csproj.GenerateResource.Cache
 D:\LTTQ\Mail_Client\Mail_Client\obj\Debug\Mail_Client.exe
 D:\LTTQ\Mail_Client\Mail_Client\obj\Debug\Mail_Client.pdb
+C:\Users\TrungHuỳnhQuốc\Documents\GitHub\Mail_Client\Mail_Client\bin\Debug\Mail_Client.exe.config
+C:\Users\TrungHuỳnhQuốc\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.exe
+C:\Users\TrungHuỳnhQuốc\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.pdb
+C:\Users\TrungHuỳnhQuốc\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csprojResolveAssemblyReference.cache
+C:\Users\TrungHuỳnhQuốc\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.Form1.resources
+C:\Users\TrungHuỳnhQuốc\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.Properties.Resources.resources
+C:\Users\TrungHuỳnhQuốc\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csproj.GenerateResource.Cache
+C:\Users\TrungHuỳnhQuốc\Documents\GitHub\Mail_Client\Mail_Client\bin\Debug\Mail_Client.exe
+C:\Users\TrungHuỳnhQuốc\Documents\GitHub\Mail_Client\Mail_Client\bin\Debug\Mail_Client.pdb
