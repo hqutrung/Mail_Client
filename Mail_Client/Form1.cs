@@ -16,35 +16,65 @@ namespace Mail_Client
 {
     public partial class Form1 : Form
     {
+        Attachment attach = null;
         public Form1()
         {
             InitializeComponent();
         }
 
+        private void Send(string from, string to, string subject, string message, Attachment file = null)
+        {
+            MailMessage mess = new MailMessage(from, to, subject, message);
+            if (attach != null)
+            {
+                mess.Attachments.Add(attach);
+            }
+            SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+            client.EnableSsl = true;
+            client.Credentials = new NetworkCredential(txtEmail.Text, txtPassword.Text);
+            client.Send(mess);
+        }
         private void btnSend_Click(object sender, EventArgs e)
         {
-            try
+            Thread thread = new Thread(() =>
             {
-                MailMessage mail = new MailMessage();
-                mail.To.Add(txtTo.Text);
-                mail.From = new MailAddress(txtEmail.Text);
-                mail.Subject = txtSubject.Text;
-                mail.Body = rtbBody.Text;
-                SmtpClient smtp = new SmtpClient();
-                smtp.Host = "smtp.gmail.com";
-                smtp.Credentials = new System.Net.NetworkCredential(txtEmail.Text, txtPassword.Text); 
-                smtp.Port = 587;
-                smtp.EnableSsl = true;
-                smtp.Send(mail);
-                MessageBox.Show("Mail Sent", "Success", MessageBoxButtons.OK);
-                txtSubject.Text = null;
-                txtTo.Text = null;
-                rtbBody.Text = null;
+                attach = null;
+                try
+                {
+                    FileInfo file = new FileInfo(txtFile.Text);
+                    attach = new Attachment(txtFile.Text);
+                }
+                catch { }
+                StreamReader sr = new StreamReader(txtTo.Text);
+                string email;
+
+                while ((email = sr.ReadLine()) != null)
+                {
+                    Send(txtEmail.Text, email, txtSubject.Text, rtbBody.Text, attach);
+                }
+                sr.Close();
             }
-            catch (Exception ex)
+              );
+            thread.Start();
+        }
+
+
+        private void btnAttach_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                Console.WriteLine("Exception in sendEmail:" + ex.Message);
+                txtFile.Text = dialog.FileName;
             }
         }
+        private void btnMailList_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                txtTo.Text = dialog.FileName;
+            }
+        }
+
     }
 }
