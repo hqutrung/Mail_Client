@@ -14,31 +14,46 @@ using System.IO;
 using System.Threading;
 namespace Mail_Client
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         Attachment attach = null;
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
 
         private void Send(string from, string to, string subject, string message, Attachment file = null)
         {
-            MailMessage mess = new MailMessage(from, to, subject, message);
-            if (attach != null)
+            bool ok;
+            try
             {
-                mess.Attachments.Add(attach);
+                ok = true;
+                MailMessage mess = new MailMessage(from, to, subject, message);
+                if (attach != null)
+                {
+                    mess.Attachments.Add(attach);
+                }
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.EnableSsl = true;
+                client.Credentials = new NetworkCredential(txtEmail.Text, txtPassword.Text);
+                client.Send(mess);
+            } catch (Exception e)
+            {
+                ok = false;
+                MessageBox.Show("unsucessfully sent because:"+"\n" + e.ToString());
+
             }
-            SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-            client.EnableSsl = true;
-            client.Credentials = new NetworkCredential(txtEmail.Text, txtPassword.Text);
-            client.Send(mess);
+            if (ok == true)
+                MessageBox.Show("successfully sent");
+           
         }
         private void btnSend_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
-            {
+            
+           
                 attach = null;
+            if (txtTo == null)
+            {
                 try
                 {
                     FileInfo file = new FileInfo(txtFile.Text);
@@ -54,8 +69,10 @@ namespace Mail_Client
                 }
                 sr.Close();
             }
-              );
-            thread.Start();
+            else Send(txtEmail.Text, txtTo.Text, txtSubject.Text, rtbBody.Text, attach);
+
+
+
         }
 
 

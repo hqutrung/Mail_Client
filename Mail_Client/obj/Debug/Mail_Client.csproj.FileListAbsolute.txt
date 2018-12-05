@@ -20,10 +20,11 @@ C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\bin\Debug\M
 C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\bin\Debug\Mail_Client.exe
 C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\bin\Debug\Mail_Client.pdb
 C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csprojAssemblyReference.cache
-C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.Form1.resources
 C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.Properties.Resources.resources
 C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csproj.GenerateResource.cache
 C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csproj.CoreCompileInputs.cache
 C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csproj.CopyComplete
 C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.exe
 C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.pdb
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.FormDN.resources
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.MainForm.resources

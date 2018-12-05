@@ -18,6 +18,8 @@ namespace Mail_Client.Properties
     {
 
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
+        internal string un="";
+        internal string pass="";
 
         public static Settings Default
         {
