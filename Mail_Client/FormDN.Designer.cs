@@ -141,11 +141,9 @@
             this.Name = "FormDN";
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Close);
-            this.Load += new System.EventHandler(this.FormDN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconGmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

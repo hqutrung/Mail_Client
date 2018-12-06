@@ -18,7 +18,11 @@ namespace Mail_Client
         {
             InitializeComponent();
         }
-
+        public class Info
+        {
+            static public string email;
+            static public string password;
+        }
         void mail()
         {
             try
@@ -32,6 +36,8 @@ namespace Mail_Client
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(txtEmail.Text, txtPassword.Text);
                 SmtpServer.EnableSsl = true;
+                Info.email = txtEmail.Text;
+                Info.password = txtPassword.Text;
                 MainForm frm = new MainForm();
                 frm.Show();
                 this.Hide();
@@ -40,25 +46,12 @@ namespace Mail_Client
             catch (Exception e)
             {
                 MessageBox.Show("Tài Khoản Hoặc Mật Khẩu Không Chính Xác! Vui Lòng Nhập Lại!");
+                txtEmail.Text = "Email";
+                txtEmail.ForeColor = Color.Silver;
+                txtPassword.Text = "Password";
+                txtPassword.ForeColor = Color.Silver;
             }
         }
-        private void FormDN_Load(object sender, EventArgs e)
-        {
-            
-            if (Properties.Settings.Default.un == "" && Properties.Settings.Default.pass == "")
-            {
-            }
-            else
-            {
-                txtEmail.Text = Properties.Settings.Default.un;
-                txtPassword.Text = Properties.Settings.Default.pass;
-                txtPassword.PasswordChar = '*';
-            }
-        }
-
-        
-
-        
         private void button1_Click(object sender, EventArgs e)
         {
             if (cbSave.Checked == true)

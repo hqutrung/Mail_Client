@@ -16,6 +16,8 @@ namespace Mail_Client
 {
     public partial class MainForm : Form
     {
+        string Email = FormDN.Info.email;
+        string Password = FormDN.Info.password;
         Attachment attach = null;
         public MainForm()
         {
@@ -35,7 +37,7 @@ namespace Mail_Client
                 }
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                 client.EnableSsl = true;
-                client.Credentials = new NetworkCredential(txtEmail.Text, txtPassword.Text);
+                client.Credentials = new NetworkCredential(Email, Password);
                 client.Send(mess);
             } catch (Exception e)
             {
@@ -44,37 +46,33 @@ namespace Mail_Client
 
             }
             if (ok == true)
-                MessageBox.Show("successfully sent");
+            {
+                MessageBox.Show("Thư Đã Được Gửi!");
+            }
            
         }
         private void btnSend_Click(object sender, EventArgs e)
         {
-            
-           
-                attach = null;
-            if (txtTo == null)
-            {
-                try
-                {
-                    FileInfo file = new FileInfo(txtFile.Text);
-                    attach = new Attachment(txtFile.Text);
-                }
-                catch { }
-                StreamReader sr = new StreamReader(txtTo.Text);
-                string email;
+                 attach = null;
+                 if (txtTo == null)
+                 {
+                     try
+                     {
+                         FileInfo file = new FileInfo(txtFile.Text);
+                         attach = new Attachment(txtFile.Text);
+                     }
+                     catch { }
+                     StreamReader sr = new StreamReader(txtTo.Text);
+                     string email;
 
-                while ((email = sr.ReadLine()) != null)
-                {
-                    Send(txtEmail.Text, email, txtSubject.Text, rtbBody.Text, attach);
-                }
-                sr.Close();
-            }
-            else Send(txtEmail.Text, txtTo.Text, txtSubject.Text, rtbBody.Text, attach);
-
-
-
-        }
-
+                     while ((email = sr.ReadLine()) != null)
+                     {
+                         Send(Email, email, txtSubject.Text, rtbBody.Text, attach);
+                     }
+                     sr.Close();
+                 }
+                 else Send(Email, txtTo.Text, txtSubject.Text, rtbBody.Text, attach);
+             }
 
         private void btnAttach_Click(object sender, EventArgs e)
         {

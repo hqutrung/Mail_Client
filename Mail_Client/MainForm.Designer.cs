@@ -44,10 +44,6 @@
             this.gbReceive = new System.Windows.Forms.GroupBox();
             this.btnReceive = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lbEmail = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.lbPassword = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -82,14 +78,10 @@
             this.gbSend.Controls.Add(this.btnMailList);
             this.gbSend.Controls.Add(this.lbSubject);
             this.gbSend.Controls.Add(this.lbTo);
-            this.gbSend.Controls.Add(this.lbPassword);
-            this.gbSend.Controls.Add(this.lbEmail);
             this.gbSend.Controls.Add(this.btnSend);
             this.gbSend.Controls.Add(this.rtbBody);
-            this.gbSend.Controls.Add(this.txtPassword);
             this.gbSend.Controls.Add(this.txtSubject);
             this.gbSend.Controls.Add(this.txtTo);
-            this.gbSend.Controls.Add(this.txtEmail);
             this.gbSend.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbSend.Location = new System.Drawing.Point(0, 0);
             this.gbSend.Name = "gbSend";
@@ -102,7 +94,7 @@
             // 
             this.lbBody.AutoSize = true;
             this.lbBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBody.Location = new System.Drawing.Point(41, 304);
+            this.lbBody.Location = new System.Drawing.Point(40, 211);
             this.lbBody.Name = "lbBody";
             this.lbBody.Size = new System.Drawing.Size(37, 15);
             this.lbBody.TabIndex = 17;
@@ -111,7 +103,7 @@
             // btnAttach
             // 
             this.btnAttach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAttach.Location = new System.Drawing.Point(321, 256);
+            this.btnAttach.Location = new System.Drawing.Point(321, 158);
             this.btnAttach.Name = "btnAttach";
             this.btnAttach.Size = new System.Drawing.Size(75, 23);
             this.btnAttach.TabIndex = 16;
@@ -123,7 +115,7 @@
             // 
             this.lbFile.AutoSize = true;
             this.lbFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFile.Location = new System.Drawing.Point(40, 240);
+            this.lbFile.Location = new System.Drawing.Point(41, 140);
             this.lbFile.Name = "lbFile";
             this.lbFile.Size = new System.Drawing.Size(30, 15);
             this.lbFile.TabIndex = 15;
@@ -132,7 +124,7 @@
             // txtFile
             // 
             this.txtFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFile.Location = new System.Drawing.Point(43, 256);
+            this.txtFile.Location = new System.Drawing.Point(43, 158);
             this.txtFile.Name = "txtFile";
             this.txtFile.ReadOnly = true;
             this.txtFile.Size = new System.Drawing.Size(272, 21);
@@ -141,7 +133,7 @@
             // btnMailList
             // 
             this.btnMailList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMailList.Location = new System.Drawing.Point(321, 125);
+            this.btnMailList.Location = new System.Drawing.Point(320, 34);
             this.btnMailList.Name = "btnMailList";
             this.btnMailList.Size = new System.Drawing.Size(75, 23);
             this.btnMailList.TabIndex = 13;
@@ -153,7 +145,7 @@
             // 
             this.lbSubject.AutoSize = true;
             this.lbSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSubject.Location = new System.Drawing.Point(40, 160);
+            this.lbSubject.Location = new System.Drawing.Point(41, 76);
             this.lbSubject.Name = "lbSubject";
             this.lbSubject.Size = new System.Drawing.Size(51, 15);
             this.lbSubject.TabIndex = 12;
@@ -163,7 +155,7 @@
             // 
             this.lbTo.AutoSize = true;
             this.lbTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTo.Location = new System.Drawing.Point(40, 111);
+            this.lbTo.Location = new System.Drawing.Point(40, 16);
             this.lbTo.Name = "lbTo";
             this.lbTo.Size = new System.Drawing.Size(24, 15);
             this.lbTo.TabIndex = 11;
@@ -183,16 +175,16 @@
             // rtbBody
             // 
             this.rtbBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbBody.Location = new System.Drawing.Point(43, 320);
+            this.rtbBody.Location = new System.Drawing.Point(44, 229);
             this.rtbBody.Name = "rtbBody";
-            this.rtbBody.Size = new System.Drawing.Size(317, 143);
+            this.rtbBody.Size = new System.Drawing.Size(347, 234);
             this.rtbBody.TabIndex = 7;
             this.rtbBody.Text = "";
             // 
             // txtSubject
             // 
             this.txtSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubject.Location = new System.Drawing.Point(43, 176);
+            this.txtSubject.Location = new System.Drawing.Point(43, 94);
             this.txtSubject.Name = "txtSubject";
             this.txtSubject.Size = new System.Drawing.Size(272, 21);
             this.txtSubject.TabIndex = 2;
@@ -200,7 +192,7 @@
             // txtTo
             // 
             this.txtTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTo.Location = new System.Drawing.Point(43, 127);
+            this.txtTo.Location = new System.Drawing.Point(44, 34);
             this.txtTo.Name = "txtTo";
             this.txtTo.Size = new System.Drawing.Size(272, 21);
             this.txtTo.TabIndex = 1;
@@ -234,43 +226,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(380, 430);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(149, 33);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(211, 21);
-            this.txtEmail.TabIndex = 0;
-            // 
-            // lbEmail
-            // 
-            this.lbEmail.AutoSize = true;
-            this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(40, 36);
-            this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(42, 15);
-            this.lbEmail.TabIndex = 9;
-            this.lbEmail.Text = "Email:";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(149, 59);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(211, 21);
-            this.txtPassword.TabIndex = 6;
-            // 
-            // lbPassword
-            // 
-            this.lbPassword.AutoSize = true;
-            this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPassword.Location = new System.Drawing.Point(40, 62);
-            this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(64, 15);
-            this.lbPassword.TabIndex = 10;
-            this.lbPassword.Text = "Password:";
             // 
             // MainForm
             // 
@@ -309,10 +264,6 @@
         private System.Windows.Forms.GroupBox gbReceive;
         private System.Windows.Forms.Button btnReceive;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label lbPassword;
-        private System.Windows.Forms.Label lbEmail;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtEmail;
     }
 }
 
