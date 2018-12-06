@@ -56,6 +56,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -65,8 +66,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gbReceive);
-            this.splitContainer1.Size = new System.Drawing.Size(825, 520);
-            this.splitContainer1.SplitterDistance = 397;
+            this.splitContainer1.Size = new System.Drawing.Size(1100, 640);
+            this.splitContainer1.SplitterDistance = 529;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // gbSend
@@ -84,8 +86,10 @@
             this.gbSend.Controls.Add(this.txtTo);
             this.gbSend.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbSend.Location = new System.Drawing.Point(0, 0);
+            this.gbSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbSend.Name = "gbSend";
-            this.gbSend.Size = new System.Drawing.Size(397, 520);
+            this.gbSend.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbSend.Size = new System.Drawing.Size(529, 640);
             this.gbSend.TabIndex = 0;
             this.gbSend.TabStop = false;
             this.gbSend.Text = "Send";
@@ -94,18 +98,20 @@
             // 
             this.lbBody.AutoSize = true;
             this.lbBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBody.Location = new System.Drawing.Point(40, 211);
+            this.lbBody.Location = new System.Drawing.Point(53, 260);
+            this.lbBody.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbBody.Name = "lbBody";
-            this.lbBody.Size = new System.Drawing.Size(37, 15);
+            this.lbBody.Size = new System.Drawing.Size(46, 18);
             this.lbBody.TabIndex = 17;
             this.lbBody.Text = "Body:";
             // 
             // btnAttach
             // 
             this.btnAttach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAttach.Location = new System.Drawing.Point(321, 158);
+            this.btnAttach.Location = new System.Drawing.Point(428, 194);
+            this.btnAttach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAttach.Name = "btnAttach";
-            this.btnAttach.Size = new System.Drawing.Size(75, 23);
+            this.btnAttach.Size = new System.Drawing.Size(100, 28);
             this.btnAttach.TabIndex = 16;
             this.btnAttach.Text = "Attach";
             this.btnAttach.UseVisualStyleBackColor = true;
@@ -115,27 +121,30 @@
             // 
             this.lbFile.AutoSize = true;
             this.lbFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFile.Location = new System.Drawing.Point(41, 140);
+            this.lbFile.Location = new System.Drawing.Point(55, 172);
+            this.lbFile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbFile.Name = "lbFile";
-            this.lbFile.Size = new System.Drawing.Size(30, 15);
+            this.lbFile.Size = new System.Drawing.Size(35, 18);
             this.lbFile.TabIndex = 15;
             this.lbFile.Text = "File:";
             // 
             // txtFile
             // 
             this.txtFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFile.Location = new System.Drawing.Point(43, 158);
+            this.txtFile.Location = new System.Drawing.Point(57, 194);
+            this.txtFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFile.Name = "txtFile";
             this.txtFile.ReadOnly = true;
-            this.txtFile.Size = new System.Drawing.Size(272, 21);
+            this.txtFile.Size = new System.Drawing.Size(361, 24);
             this.txtFile.TabIndex = 14;
             // 
             // btnMailList
             // 
             this.btnMailList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMailList.Location = new System.Drawing.Point(320, 34);
+            this.btnMailList.Location = new System.Drawing.Point(427, 42);
+            this.btnMailList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMailList.Name = "btnMailList";
-            this.btnMailList.Size = new System.Drawing.Size(75, 23);
+            this.btnMailList.Size = new System.Drawing.Size(100, 28);
             this.btnMailList.TabIndex = 13;
             this.btnMailList.Text = "Mail List";
             this.btnMailList.UseVisualStyleBackColor = true;
@@ -145,9 +154,10 @@
             // 
             this.lbSubject.AutoSize = true;
             this.lbSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSubject.Location = new System.Drawing.Point(41, 76);
+            this.lbSubject.Location = new System.Drawing.Point(55, 94);
+            this.lbSubject.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSubject.Name = "lbSubject";
-            this.lbSubject.Size = new System.Drawing.Size(51, 15);
+            this.lbSubject.Size = new System.Drawing.Size(61, 18);
             this.lbSubject.TabIndex = 12;
             this.lbSubject.Text = "Subject:";
             // 
@@ -155,18 +165,20 @@
             // 
             this.lbTo.AutoSize = true;
             this.lbTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTo.Location = new System.Drawing.Point(40, 16);
+            this.lbTo.Location = new System.Drawing.Point(53, 20);
+            this.lbTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTo.Name = "lbTo";
-            this.lbTo.Size = new System.Drawing.Size(24, 15);
+            this.lbTo.Size = new System.Drawing.Size(30, 18);
             this.lbTo.TabIndex = 11;
             this.lbTo.Text = "To:";
             // 
             // btnSend
             // 
             this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSend.Location = new System.Drawing.Point(176, 485);
+            this.btnSend.Location = new System.Drawing.Point(235, 597);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 23);
+            this.btnSend.Size = new System.Drawing.Size(100, 28);
             this.btnSend.TabIndex = 8;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -175,26 +187,29 @@
             // rtbBody
             // 
             this.rtbBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbBody.Location = new System.Drawing.Point(44, 229);
+            this.rtbBody.Location = new System.Drawing.Point(59, 282);
+            this.rtbBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtbBody.Name = "rtbBody";
-            this.rtbBody.Size = new System.Drawing.Size(347, 234);
+            this.rtbBody.Size = new System.Drawing.Size(461, 287);
             this.rtbBody.TabIndex = 7;
             this.rtbBody.Text = "";
             // 
             // txtSubject
             // 
             this.txtSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubject.Location = new System.Drawing.Point(43, 94);
+            this.txtSubject.Location = new System.Drawing.Point(57, 116);
+            this.txtSubject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSubject.Name = "txtSubject";
-            this.txtSubject.Size = new System.Drawing.Size(272, 21);
+            this.txtSubject.Size = new System.Drawing.Size(361, 24);
             this.txtSubject.TabIndex = 2;
             // 
             // txtTo
             // 
             this.txtTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTo.Location = new System.Drawing.Point(44, 34);
+            this.txtTo.Location = new System.Drawing.Point(59, 42);
+            this.txtTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(272, 21);
+            this.txtTo.Size = new System.Drawing.Size(361, 24);
             this.txtTo.TabIndex = 1;
             // 
             // gbReceive
@@ -203,8 +218,10 @@
             this.gbReceive.Controls.Add(this.richTextBox1);
             this.gbReceive.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbReceive.Location = new System.Drawing.Point(0, 0);
+            this.gbReceive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbReceive.Name = "gbReceive";
-            this.gbReceive.Size = new System.Drawing.Size(424, 520);
+            this.gbReceive.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbReceive.Size = new System.Drawing.Size(566, 640);
             this.gbReceive.TabIndex = 1;
             this.gbReceive.TabStop = false;
             this.gbReceive.Text = "Receive";
@@ -212,29 +229,33 @@
             // btnReceive
             // 
             this.btnReceive.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReceive.Location = new System.Drawing.Point(189, 485);
+            this.btnReceive.Location = new System.Drawing.Point(252, 597);
+            this.btnReceive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReceive.Name = "btnReceive";
-            this.btnReceive.Size = new System.Drawing.Size(75, 23);
+            this.btnReceive.Size = new System.Drawing.Size(100, 28);
             this.btnReceive.TabIndex = 9;
             this.btnReceive.Text = "Receive";
             this.btnReceive.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(20, 33);
+            this.richTextBox1.Location = new System.Drawing.Point(27, 41);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(380, 430);
+            this.richTextBox1.Size = new System.Drawing.Size(505, 528);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 520);
+            this.ClientSize = new System.Drawing.Size(1100, 640);
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Close);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

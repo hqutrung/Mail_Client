@@ -44,10 +44,10 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEmail.Location = new System.Drawing.Point(47, 149);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Location = new System.Drawing.Point(63, 183);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(238, 30);
+            this.txtEmail.Size = new System.Drawing.Size(316, 36);
             this.txtEmail.TabIndex = 0;
             this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.textbox1_Click);
@@ -58,11 +58,10 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtPassword.Location = new System.Drawing.Point(47, 197);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPassword.Location = new System.Drawing.Point(63, 242);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(238, 30);
+            this.txtPassword.Size = new System.Drawing.Size(316, 36);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Text = "Password";
             this.txtPassword.Click += new System.EventHandler(this.textbox2_Click);
@@ -73,10 +72,10 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(47, 293);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogin.Location = new System.Drawing.Point(63, 361);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(238, 37);
+            this.btnLogin.Size = new System.Drawing.Size(317, 46);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -87,10 +86,10 @@
             this.cbSave.AutoSize = true;
             this.cbSave.BackColor = System.Drawing.SystemColors.Control;
             this.cbSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSave.Location = new System.Drawing.Point(47, 242);
-            this.cbSave.Margin = new System.Windows.Forms.Padding(2);
+            this.cbSave.Location = new System.Drawing.Point(63, 298);
+            this.cbSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbSave.Name = "cbSave";
-            this.cbSave.Size = new System.Drawing.Size(156, 28);
+            this.cbSave.Size = new System.Drawing.Size(196, 33);
             this.cbSave.TabIndex = 3;
             this.cbSave.Text = "Remember Me";
             this.cbSave.UseVisualStyleBackColor = false;
@@ -105,9 +104,10 @@
             // iconGmail
             // 
             this.iconGmail.Image = global::Mail_Client.Properties.Resources.images;
-            this.iconGmail.Location = new System.Drawing.Point(119, 12);
+            this.iconGmail.Location = new System.Drawing.Point(159, 15);
+            this.iconGmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconGmail.Name = "iconGmail";
-            this.iconGmail.Size = new System.Drawing.Size(100, 100);
+            this.iconGmail.Size = new System.Drawing.Size(133, 123);
             this.iconGmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconGmail.TabIndex = 4;
             this.iconGmail.TabStop = false;
@@ -116,19 +116,20 @@
             // 
             this.gmail.AutoSize = true;
             this.gmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gmail.Location = new System.Drawing.Point(116, 116);
+            this.gmail.Location = new System.Drawing.Point(155, 143);
+            this.gmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gmail.Name = "gmail";
-            this.gmail.Size = new System.Drawing.Size(103, 31);
+            this.gmail.Size = new System.Drawing.Size(128, 39);
             this.gmail.TabIndex = 5;
             this.gmail.Text = "GMAIL";
             // 
             // FormDN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(332, 354);
+            this.ClientSize = new System.Drawing.Size(443, 436);
             this.Controls.Add(this.gmail);
             this.Controls.Add(this.iconGmail);
             this.Controls.Add(this.cbSave);
@@ -137,13 +138,13 @@
             this.Controls.Add(this.txtEmail);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormDN";
             this.Text = "Login";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Close);
             ((System.ComponentModel.ISupportInitialize)(this.iconGmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

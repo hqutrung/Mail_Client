@@ -88,12 +88,7 @@ namespace Mail_Client
             txtPassword.ForeColor = Color.FromArgb(45, 45, 45);
         }
 
-        private void Close(object sender, FormClosedEventArgs e)
-        {
-            FormDN f = new FormDN();
-            f.Show();
-
-        }
+        
 
         private void txtEmail_Enter(object sender, EventArgs e)
         {
@@ -118,6 +113,7 @@ namespace Mail_Client
             if(txtPassword.Text=="Password")
             {
                 txtPassword.Text = "";
+                txtPassword.PasswordChar = '*';
                 txtPassword.ForeColor = Color.Black;
             }
         }

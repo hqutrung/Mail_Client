@@ -16,6 +16,8 @@ namespace Mail_Client
 {
     public partial class MainForm : Form
     {
+        string show = "";
+        bool ok;
         string Email = FormDN.Info.email;
         string Password = FormDN.Info.password;
         Attachment attach = null;
@@ -26,7 +28,7 @@ namespace Mail_Client
 
         private void Send(string from, string to, string subject, string message, Attachment file = null)
         {
-            bool ok;
+            
             try
             {
                 ok = true;
@@ -42,36 +44,44 @@ namespace Mail_Client
             } catch (Exception e)
             {
                 ok = false;
-                MessageBox.Show("unsucessfully sent because:"+"\n" + e.ToString());
+                
 
             }
-            if (ok == true)
-            {
-                MessageBox.Show("Thư Đã Được Gửi!");
-            }
-           
+            
         }
         private void btnSend_Click(object sender, EventArgs e)
         {
-                 attach = null;
-                 if (txtTo == null)
-                 {
-                     try
-                     {
-                         FileInfo file = new FileInfo(txtFile.Text);
-                         attach = new Attachment(txtFile.Text);
-                     }
-                     catch { }
-                     StreamReader sr = new StreamReader(txtTo.Text);
-                     string email;
+            
+            attach = null;
+            
+                try
+                {
+                    FileInfo file = new FileInfo(txtFile.Text);
+                    attach = new Attachment(txtFile.Text);
+                }
+                catch { }
+                StreamReader sr = new StreamReader(txtTo.Text);
+                string email;
 
-                     while ((email = sr.ReadLine()) != null)
-                     {
-                         Send(Email, email, txtSubject.Text, rtbBody.Text, attach);
-                     }
-                     sr.Close();
-                 }
-                 else Send(Email, txtTo.Text, txtSubject.Text, rtbBody.Text, attach);
+                while ((email = sr.ReadLine()) != null)
+                {
+                    Send(Email, email, txtSubject.Text, rtbBody.Text, attach);
+                    if (!ok)
+                    {
+                        
+                        
+                            show += ("\n Thư gửi cho địa chỉ gmail " + email +" không thành công do địa chỉ gmail không có thực.");
+                        
+                    }
+                    
+                }
+                sr.Close();
+                if (show == "")
+                    MessageBox.Show("đã gửi thành công.");
+                else
+                    MessageBox.Show(show);
+            
+           
              }
 
         private void btnAttach_Click(object sender, EventArgs e)
@@ -91,5 +101,10 @@ namespace Mail_Client
             }
         }
 
+        private void Close(object sender, FormClosedEventArgs e)
+        {
+            FormDN f = new FormDN();
+            f.Show();
+        }
     }
 }
