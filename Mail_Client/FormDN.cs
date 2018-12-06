@@ -25,14 +25,13 @@ namespace Mail_Client
             {
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-                //mail.From = new MailAddress(txtEmail.Text);
-                //mail.To.Add(txtEmail.Text);
-                //mail.Subject = "Verification";
-                //mail.Body = "LOGIN";
+                mail.From = new MailAddress(txtEmail.Text);
+                mail.To.Add(txtEmail.Text);
+                mail.Subject = "Verification";
+                mail.Body = "LOGIN";
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(txtEmail.Text, txtPassword.Text);
                 SmtpServer.EnableSsl = true;
-                //SmtpServer.Send(mail);
                 MainForm frm = new MainForm();
                 frm.Show();
                 this.Hide();
