@@ -38,7 +38,7 @@ namespace Mail_Client
                 SmtpServer.EnableSsl = true;
                 Info.email = txtEmail.Text;
                 Info.password = txtPassword.Text;
-                MainForm frm = new MainForm();
+                MainForm frm = new MainForm(this);
                 frm.Show();
                 this.Hide();
             }
@@ -56,8 +56,8 @@ namespace Mail_Client
         {
             if (cbSave.Checked == true)
             {
-                Properties.Settings.Default.un = txtEmail.Text;
-                Properties.Settings.Default.pass = txtPassword.Text;
+                Properties.Settings.Default.Username = txtEmail.Text;
+                Properties.Settings.Default.Password = txtPassword.Text;
                 Properties.Settings.Default.Save();
                 mail();
             }
@@ -67,9 +67,9 @@ namespace Mail_Client
                 mail();
             }
 
-            else if (txtEmail.Text == Properties.Settings.Default.un && txtPassword.Text == Properties.Settings.Default.pass)
+            else if (txtEmail.Text == Properties.Settings.Default.Username && txtPassword.Text == Properties.Settings.Default.Password)
             {
-                MainForm frm = new MainForm();
+                MainForm frm = new MainForm(this);
                 frm.Show();
                 this.Hide();
             }

@@ -16,14 +16,16 @@ namespace Mail_Client
 {
     public partial class MainForm : Form
     {
+        Form FormLogin;
         string show = "";
         bool ok;
         string Email = FormDN.Info.email;
         string Password = FormDN.Info.password;
         Attachment attach = null;
-        public MainForm()
+        public MainForm(Form form)
         {
             InitializeComponent();
+            this.FormLogin = form;
         }
 
         private void Send(string from, string to, string subject, string message, Attachment file = null)
@@ -51,10 +53,10 @@ namespace Mail_Client
         }
         private void btnSend_Click(object sender, EventArgs e)
         {
-            
+
             attach = null;
-            
-                try
+
+            try
                 {
                     FileInfo file = new FileInfo(txtFile.Text);
                     attach = new Attachment(txtFile.Text);
@@ -103,8 +105,7 @@ namespace Mail_Client
 
         private void Close(object sender, FormClosedEventArgs e)
         {
-            FormDN f = new FormDN();
-            f.Show();
+            this.FormLogin.Show();
         }
     }
 }
