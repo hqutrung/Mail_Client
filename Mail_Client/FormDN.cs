@@ -14,6 +14,8 @@ namespace Mail_Client
 {
     public partial class FormDN : Form
     {
+        bool ok;
+        
         public FormDN()
         {
             InitializeComponent();
@@ -25,6 +27,7 @@ namespace Mail_Client
         }
         void mail()
         {
+             ok = true;
             try
             {
                 MailMessage mail = new MailMessage();
@@ -36,20 +39,27 @@ namespace Mail_Client
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(txtEmail.Text, txtPassword.Text);
                 SmtpServer.EnableSsl = true;
+                SmtpServer.Send(mail);
                 Info.email = txtEmail.Text;
                 Info.password = txtPassword.Text;
-                MainForm frm = new MainForm(this);
-                frm.Show();
-                this.Hide();
+                
             }
 
             catch (Exception e)
             {
+                ok = false;
                 MessageBox.Show("Tài Khoản Hoặc Mật Khẩu Không Chính Xác! Vui Lòng Nhập Lại!");
                 txtEmail.Text = "Email";
                 txtEmail.ForeColor = Color.Silver;
                 txtPassword.Text = "Password";
                 txtPassword.ForeColor = Color.Silver;
+                
+            }
+            if(ok ==true)
+            {
+                MainForm frm = new MainForm(this);
+                frm.Show();
+                this.Hide();
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -62,17 +72,12 @@ namespace Mail_Client
                 mail();
             }
 
-            else if (cbSave.Checked == false)
+            else 
             {
                 mail();
             }
 
-            else if (txtEmail.Text == Properties.Settings.Default.Username && txtPassword.Text == Properties.Settings.Default.Password)
-            {
-                MainForm frm = new MainForm(this);
-                frm.Show();
-                this.Hide();
-            }
+            
 
         }
 
@@ -126,5 +131,7 @@ namespace Mail_Client
                 txtPassword.ForeColor = Color.Silver;
             }
         }
+
+        
     }
 }

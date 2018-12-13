@@ -105,7 +105,7 @@
             // 
             this.iconGmail.Image = global::Mail_Client.Properties.Resources.images;
             this.iconGmail.Location = new System.Drawing.Point(159, 15);
-            this.iconGmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconGmail.Margin = new System.Windows.Forms.Padding(4);
             this.iconGmail.Name = "iconGmail";
             this.iconGmail.Size = new System.Drawing.Size(133, 123);
             this.iconGmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -141,6 +141,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormDN";
             this.Text = "Login";
+            
             ((System.ComponentModel.ISupportInitialize)(this.iconGmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
