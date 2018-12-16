@@ -33,12 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>F:\UIT\Lập trình trực quan\doan\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="S22.Imap, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\S22.Imap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +68,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignEmail.Designer.cs">
+      <DependentUpon>SignEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignPassword.Designer.cs">
+      <DependentUpon>SignPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplachScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplachScreen.Designer.cs">
+      <DependentUpon>SplachScreen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormDN.resx">
       <DependentUpon>FormDN.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +102,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SignEmail.resx">
+      <DependentUpon>SignEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignPassword.resx">
+      <DependentUpon>SignPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplachScreen.resx">
+      <DependentUpon>SplachScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,6 +132,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9590ecdfdb0a0b250d4f85bfd98cb0d2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_99yygXrRR8ix1wDOsdjLKA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gg-1_synrgy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gg-1_synrgy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evolving_google_identity_share.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7597_Google.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

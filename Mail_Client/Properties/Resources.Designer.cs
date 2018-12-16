@@ -63,6 +63,66 @@ namespace Mail_Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_99yygXrRR8ix1wDOsdjLKA {
+            get {
+                object obj = ResourceManager.GetObject("1_99yygXrRR8ix1wDOsdjLKA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7597_Google {
+            get {
+                object obj = ResourceManager.GetObject("7597_Google", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9590ecdfdb0a0b250d4f85bfd98cb0d2 {
+            get {
+                object obj = ResourceManager.GetObject("9590ecdfdb0a0b250d4f85bfd98cb0d2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap evolving_google_identity_share {
+            get {
+                object obj = ResourceManager.GetObject("evolving_google_identity_share", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gg_1_synrgy {
+            get {
+                object obj = ResourceManager.GetObject("gg-1_synrgy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gg_1_synrgy1 {
+            get {
+                object obj = ResourceManager.GetObject("gg-1_synrgy1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
