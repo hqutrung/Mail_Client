@@ -124,7 +124,7 @@
             // 
             this.linkCreate.AutoSize = true;
             this.linkCreate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkCreate.Location = new System.Drawing.Point(34, 245);
+            this.linkCreate.Location = new System.Drawing.Point(33, 251);
             this.linkCreate.Name = "linkCreate";
             this.linkCreate.Size = new System.Drawing.Size(110, 20);
             this.linkCreate.TabIndex = 9;

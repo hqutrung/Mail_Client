@@ -48,7 +48,7 @@ namespace Mail_Client
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Sai");
+                    MessageBox.Show("Your account or password is incorrect");
                     txtPass.Text = null;
                 }
                 

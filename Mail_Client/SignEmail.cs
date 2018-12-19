@@ -15,7 +15,6 @@ namespace Mail_Client
 {
     public partial class SignEmail : Form
     {
-        bool ok;
         
         public SignEmail()
         {
