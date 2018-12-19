@@ -74,7 +74,11 @@ namespace Mail_Client
 
             else 
             {
+                
                 mail();
+
+                txtEmail.Clear();
+                txtPassword.Clear();
             }
 
             

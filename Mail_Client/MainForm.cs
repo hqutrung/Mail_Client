@@ -57,31 +57,58 @@ namespace Mail_Client
             attach = null;
 
             try
-                {
-                    FileInfo file = new FileInfo(txtFile.Text);
-                    attach = new Attachment(txtFile.Text);
-                }
-                catch { }
+            {
+                FileInfo file = new FileInfo(txtFile.Text);
+                attach = new Attachment(txtFile.Text);
+            }
+            catch { }
+            bool ok1 = true;
+            try
+            {
+                StreamReader sr = new StreamReader(txtTo.Text);
+
+            }
+            catch (Exception eaa)
+            {
+                ok1 = false;
+            }
+
+            if (ok1 == true)
+            {
                 StreamReader sr = new StreamReader(txtTo.Text);
                 string email;
-
                 while ((email = sr.ReadLine()) != null)
                 {
                     Send(Email, email, txtSubject.Text, rtbBody.Text, attach);
                     if (!ok)
                     {
-                        
-                        
-                            show += ("\n Thư gửi cho địa chỉ gmail " + email +" không thành công do địa chỉ gmail không có thực.");
-                        
+
+
+                        show += ("\n Thư gửi cho địa chỉ gmail " + email + " không thành công do địa chỉ gmail không có thực.");
+
                     }
-                    
+
                 }
                 sr.Close();
                 if (show == "")
                     MessageBox.Show("đã gửi thành công.");
                 else
                     MessageBox.Show(show);
+            }
+            else
+            {
+                Send(Email, txtTo.Text, txtSubject.Text, rtbBody.Text, attach);
+                if(!ok)
+                {
+                    MessageBox.Show("\n Thư gửi cho địa chỉ gmail " + txtTo.Text + " không thành công do địa chỉ gmail không có thực.");
+                }
+                else
+                {
+                    MessageBox.Show("đã gửi thành công.");
+                }
+            }
+            
+        
             
            
              }
@@ -105,6 +132,7 @@ namespace Mail_Client
 
         private void Close(object sender, FormClosedEventArgs e)
         {
+            
             this.FormLogin.Show();
         }
     }
