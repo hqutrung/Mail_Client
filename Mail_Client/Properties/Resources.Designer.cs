@@ -103,6 +103,16 @@ namespace Mail_Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gmail_1 {
+            get {
+                object obj = ResourceManager.GetObject("gmail-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap googlelogo {
             get {
                 object obj = ResourceManager.GetObject("googlelogo", resourceCulture);

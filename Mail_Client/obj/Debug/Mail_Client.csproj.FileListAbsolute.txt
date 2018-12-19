@@ -53,3 +53,6 @@ D:\LTTQ\Đồ án\Mail_Client\Mail_Client\obj\Debug\Mail_Client.SplachGmail.reso
 D:\LTTQ\Đồ án\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csproj.GenerateResource.Cache
 D:\LTTQ\Đồ án\Mail_Client\Mail_Client\obj\Debug\Mail_Client.SignPass.resources
 D:\LTTQ\Đồ án\Mail_Client\Mail_Client\bin\Debug\Bunifu_UI_v1.52.dll
+D:\Đồ án\Mail_Client\Mail_Client\bin\Debug\Bunifu_UI_v1.52.dll
+D:\Đồ án\Mail_Client\Mail_Client\obj\Debug\Mail_Client.SignPass.resources
+D:\Đồ án\Mail_Client\Mail_Client\obj\Debug\Mail_Client.About.resources

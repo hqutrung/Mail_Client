@@ -32,10 +32,7 @@ namespace Mail_Client
 
         private void txtEmail_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtEmail.Text))
-            {
-                lblEmail.Visible = false;
-            }
+
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -75,6 +72,7 @@ namespace Mail_Client
                 this.SetDesktopLocation(Cursor.Position.X - x, Cursor.Position.Y - y);
             }
         }
+
 
         private void SignEmail_MouseUp(object sender, MouseEventArgs e)
         {

@@ -114,6 +114,11 @@ namespace Mail_Client
             flag = false;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new About().Show();
+        }
+
         private void MainForm_MouseMove(object sender, MouseEventArgs e)
         {
             if(flag==true)
