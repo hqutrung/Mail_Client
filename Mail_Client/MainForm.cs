@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,15 +18,18 @@ namespace Mail_Client
     public partial class MainForm : Form
     {
         Form FormLogin;
-        string show = "";
         bool ok;
-        string Email = FormDN.Info.email;
-        string Password = FormDN.Info.password;
         Attachment attach = null;
-        public MainForm(Form form)
+
+
+        string pass,email;
+        MailMessage mail = new MailMessage();
+        SmtpClient stm = new SmtpClient("smtp.gmail.com", 587);
+        public MainForm(string email,string pass)
         {
             InitializeComponent();
-            this.FormLogin = form;
+            this.pass = pass;
+            this.email = email;
         }
 
         private void Send(string from, string to, string subject, string message, Attachment file = null)
@@ -41,86 +45,20 @@ namespace Mail_Client
                 }
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                 client.EnableSsl = true;
-                client.Credentials = new NetworkCredential(Email, Password);
+                client.Credentials = new NetworkCredential(email, pass);
                 client.Send(mess);
             } catch (Exception e)
             {
                 ok = false;
-                
-
             }
             
         }
-        private void btnSend_Click(object sender, EventArgs e)
+
+        private void btnMinimize_Click(object sender, EventArgs e)
         {
-
-            attach = null;
-
-            try
-            {
-                FileInfo file = new FileInfo(txtFile.Text);
-                attach = new Attachment(txtFile.Text);
-            }
-            catch { }
-            bool ok1 = true;
-            try
-            {
-                StreamReader sr = new StreamReader(txtTo.Text);
-
-            }
-            catch (Exception eaa)
-            {
-                ok1 = false;
-            }
-
-            if (ok1 == true)
-            {
-                StreamReader sr = new StreamReader(txtTo.Text);
-                string email;
-                while ((email = sr.ReadLine()) != null)
-                {
-                    Send(Email, email, txtSubject.Text, rtbBody.Text, attach);
-                    if (!ok)
-                    {
-
-
-                        show += ("\n Thư gửi cho địa chỉ gmail " + email + " không thành công do địa chỉ gmail không có thực.");
-
-                    }
-
-                }
-                sr.Close();
-                if (show == "")
-                    MessageBox.Show("đã gửi thành công.");
-                else
-                    MessageBox.Show(show);
-            }
-            else
-            {
-                Send(Email, txtTo.Text, txtSubject.Text, rtbBody.Text, attach);
-                if(!ok)
-                {
-                    MessageBox.Show("\n Thư gửi cho địa chỉ gmail " + txtTo.Text + " không thành công do địa chỉ gmail không có thực.");
-                }
-                else
-                {
-                    MessageBox.Show("đã gửi thành công.");
-                }
-            }
-            
-        
-            
-           
-             }
-
-        private void btnAttach_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
-            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                txtFile.Text = dialog.FileName;
-            }
+            this.WindowState = FormWindowState.Minimized;
         }
+
         private void btnMailList_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -130,10 +68,73 @@ namespace Mail_Client
             }
         }
 
-        private void Close(object sender, FormClosedEventArgs e)
+        private void btnSend_Click(object sender, EventArgs e)
         {
-            
-            this.FormLogin.Show();
+            attach = null;
+
+            try
+            {
+                FileInfo file = new FileInfo(txtFile.Text);
+                attach = new Attachment(txtFile.Text);
+            }
+            catch { }
+            Send(email, txtTo.Text, txtSubject.Text, rtbBody.Text, attach);
+            if(ok)
+            {
+                MessageBox.Show("Mail is sent!", "Success");
+            }
+            else MessageBox.Show("Error!", "Error");
+
         }
+
+        private void btnAttach_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                txtFile.Text = dialog.FileName;
+            }
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            new SignEmail().Show();
+            this.Hide();
+        }
+        Boolean flag; int x, y;
+
+        private void MainForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            flag = true;
+            x = e.X;
+            y = e.Y;
+        }
+
+        private void MainForm_MouseUp(object sender, MouseEventArgs e)
+        {
+            flag = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new About().Show();
+        }
+
+        private void MainForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(flag==true)
+            {
+                this.SetDesktopLocation(Cursor.Position.X - x, Cursor.Position.Y - y);
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do You Want To Exit?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
     }
 }

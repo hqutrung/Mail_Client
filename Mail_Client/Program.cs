@@ -16,7 +16,7 @@ namespace Mail_Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDN());
+            Application.Run(new SplachGmail());
         }
     }
 }
