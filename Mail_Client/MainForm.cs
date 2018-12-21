@@ -98,7 +98,7 @@ namespace Mail_Client
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            new SignEmail().Show();
+            new SignEmail(email).Show();
             this.Hide();
         }
         Boolean flag; int x, y;

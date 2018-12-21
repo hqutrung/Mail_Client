@@ -28,7 +28,7 @@ namespace Mail_Client
             {
                 timer1.Stop();
                 this.Hide();
-                new SignEmail().Show();
+                new SignEmail(null).Show();
             }
             n++;
         }

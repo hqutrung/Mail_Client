@@ -68,7 +68,7 @@ namespace Mail_Client
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            new SignEmail().Show();
+            new SignEmail(email).Show();
             this.Hide();
         }
         Boolean flag; int x, y;
@@ -82,6 +82,11 @@ namespace Mail_Client
         private void SignPass_MouseUp(object sender, MouseEventArgs e)
         {
             flag = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void SignPass_MouseMove(object sender, MouseEventArgs e)

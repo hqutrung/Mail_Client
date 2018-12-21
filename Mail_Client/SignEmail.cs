@@ -17,9 +17,10 @@ namespace Mail_Client
     public partial class SignEmail : Form
     {
         
-        public SignEmail()
+        public SignEmail(string email)
         {
             InitializeComponent();
+            this.txtEmail.Text = email;
         }
         private void txtEmail_Enter(object sender, EventArgs e)
         {
@@ -142,6 +143,11 @@ namespace Mail_Client
                 button1.Visible = false;
             }
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void SignEmail_MouseUp(object sender, MouseEventArgs e)
