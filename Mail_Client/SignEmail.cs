@@ -83,7 +83,7 @@ namespace Mail_Client
         static extern uint InitTrialReturn(String aKeyCode, IntPtr aHWnd);
         [DllImport("TrialApp.dll", EntryPoint = "DisplayRegistrationStr", CharSet = CharSet.Ansi)]
         static extern uint DisplayRegistration(String aKeyCode, IntPtr aHWnd);
-        private const string kLibraryKey = "AB1F34FCF2AC4D118D3A9059E9BFAAF655AB4BAE387EA39C61F6D178555A07D3980DDF5EC88D";
+        private const string kLibraryKey = "EA657C3495B073875C9D19AE163DE5591D550240E6A5F5F1CF785D01554B6BBF25C35DD1803A";
         private static void OnInit()
         {
             try
