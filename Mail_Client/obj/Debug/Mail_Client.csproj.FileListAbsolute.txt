@@ -84,3 +84,17 @@ C:\Users\COMPUTER\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client
 C:\Users\COMPUTER\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.SignPass.resources
 C:\Users\COMPUTER\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.SplachGmail.resources
 C:\Users\COMPUTER\Documents\GitHub\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csproj.GenerateResource.Cache
+D:\da\Mail_Client\Mail_Client\bin\Debug\Mail_Client.exe.config
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.exe
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.pdb
+D:\da\Mail_Client\Mail_Client\bin\Debug\Mail_Client.exe
+D:\da\Mail_Client\Mail_Client\bin\Debug\Mail_Client.pdb
+D:\da\Mail_Client\Mail_Client\bin\Debug\Bunifu_UI_v1.52.dll
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csprojResolveAssemblyReference.cache
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.About.resources
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.SignEmail.resources
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.MainForm.resources
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.Properties.Resources.resources
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.SignPass.resources
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.SplachGmail.resources
+D:\da\Mail_Client\Mail_Client\obj\Debug\Mail_Client.csproj.GenerateResource.Cache
