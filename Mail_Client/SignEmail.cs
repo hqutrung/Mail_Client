@@ -83,7 +83,7 @@ namespace Mail_Client
         static extern uint InitTrialReturn(String aKeyCode, IntPtr aHWnd);
         [DllImport("TrialApp.dll", EntryPoint = "DisplayRegistrationStr", CharSet = CharSet.Ansi)]
         static extern uint DisplayRegistration(String aKeyCode, IntPtr aHWnd);
-        private const string kLibraryKey = "7C75C71946421780553E18D9C34F46ED48A3518A063EBD49E7F9E926AAA0928654EDBBC955C2";
+        private const string kLibraryKey = "AB1F34FCF2AC4D118D3A9059E9BFAAF655AB4BAE387EA39C61F6D178555A07D3980DDF5EC88D";
         private static void OnInit()
         {
             try
@@ -113,37 +113,16 @@ namespace Mail_Client
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Process process1 = Process.GetCurrentProcess();
-                DisplayRegistration(kLibraryKey, process1.MainWindowHandle);
-
-                label2.Visible = false;
-                button1.Visible = false;
-
-            }
-            catch (DllNotFoundException ex)
-            {
-
-                MessageBox.Show(ex.ToString());
-            }
-            catch (Exception ex1)
-            {
-
-                MessageBox.Show(ex1.ToString());
-            }
-        }
-
-        private void SignEmail_Load(object sender, EventArgs e)
-        {
             OnInit();
-            if (flag1 == 1)
+            if(flag1==1)
             {
                 label2.Visible = false;
                 button1.Visible = false;
             }
-
+            
         }
+
+        
 
         private void button2_Click(object sender, EventArgs e)
         {

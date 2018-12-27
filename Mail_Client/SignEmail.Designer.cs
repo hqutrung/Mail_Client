@@ -213,7 +213,7 @@
             this.Name = "SignEmail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.SignEmail_Load);
+           
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SignEmail_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SignEmail_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SignEmail_MouseUp);

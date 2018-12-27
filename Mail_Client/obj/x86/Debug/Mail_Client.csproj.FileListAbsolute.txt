@@ -1,0 +1,17 @@
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\bin\x86\Debug\Mail_Client.exe.config
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\bin\x86\Debug\Mail_Client.exe
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\bin\x86\Debug\Mail_Client.pdb
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\bin\x86\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\bin\x86\Debug\S22.Imap.dll
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.csprojAssemblyReference.cache
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.About.resources
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.SignEmail.resources
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.MainForm.resources
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.Properties.Resources.resources
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.SignPass.resources
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.SplachGmail.resources
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.csproj.GenerateResource.cache
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.csproj.CopyComplete
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.exe
+C:\Users\Nguyen Quang Khang\Documents\GitHub\Mail_Client\Mail_Client\obj\x86\Debug\Mail_Client.pdb
