@@ -22,13 +22,13 @@ https://github.com/trunghq17520184/Mail_Client/releases
 * **Bước 1:** Truy cập vào link tải về đã cung cấp ở trên và tải mục Setup Files.zip
 * **Bước 2:** Giải nén thư mục sau đó truy cập vào folder Setup Files rồi chạy phần mềm cài đặt Mail++.msi 
 và tiếp tục các bước dưới đây để 
- ![IMG_1](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/1.png)
+ * ![IMG_1](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/1.png)
 * Click vào Next
- ![IMG_2](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/2.png)
+ * ![IMG_2](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/2.png)
 * Click vào Browse.. để chọn đường dẫn bạn muốn lưu phần mềm, sau khi chọn xong đường dẫn tiếp tục Next
- ![IMG_3](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/3.png)
+ * ![IMG_3](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/3.png)
 * Cuối cùng chọn vào Install và đợi trong giây lát
- ![IMG_4](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/4.png)
+ * ![IMG_4](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/4.png)
 * Cuối cùng chọn finish và sử dụng ứng dụng thôi nào
 ##VI. Sử dụng ứng dụng
 * **Bước 1:** Chạy ứng dụng sau khi đã được cài đặt ở trên thiết bị của bạn
