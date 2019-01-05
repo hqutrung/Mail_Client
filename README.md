@@ -23,20 +23,20 @@ https://github.com/trunghq17520184/Mail_Client/releases
 * **Bước 2:** Giải nén thư mục sau đó truy cập vào folder Setup Files rồi chạy phần mềm cài đặt Mail++.msi 
 và tiếp tục các bước dưới đây để 
  ![IMG_1](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/1.png)
-Click vào Next
+* Click vào Next
  ![IMG_2](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/2.png)
-Click vào Browse.. để chọn đường dẫn bạn muốn lưu phần mềm, sau khi chọn xong đường dẫn tiếp tục Next
+* Click vào Browse.. để chọn đường dẫn bạn muốn lưu phần mềm, sau khi chọn xong đường dẫn tiếp tục Next
  ![IMG_3](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/3.png)
-Cuối cùng chọn vào Install và đợi trong giây lát
+* Cuối cùng chọn vào Install và đợi trong giây lát
  ![IMG_4](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/4.png)
-Cuối cùng chọn finish và sử dụng ứng dụng thôi nào
+* Cuối cùng chọn finish và sử dụng ứng dụng thôi nào
 ##VI. Sử dụng ứng dụng
 * **Bước 1:** Chạy ứng dụng sau khi đã được cài đặt ở trên thiết bị của bạn
 * **Bước 2:** Ứng dụng sẽ hiện ra màn hình đăng nhập 
 **Lưu ý**: * Để sử dụng bạn phải truy cập vào link https://myaccount.google.com/lesssecureapps và chọn chế độ bật cho tài khoản ( Nếu bạn chưa có tài khoản hãy đăng ký tài khoản sau đó truy cập vào đây)
             * Vì đây là ứng dụng riêng nên các bạn chỉ được trải nghiệm 30 ngày sau đó các bạn phải trả phí. Phía dưới là một số key dùng thử dành cho các bạn
  ![IMG_5](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/5.png)
-Sau khi truy cập thì đây sẽ là giao diện chính của ứng dụng
+*Sau khi truy cập thì đây sẽ là giao diện chính của ứng dụng
  ![IMG_6](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/6.png)
 ## VII. Một số key dùng thử
 * HVS28FBJ38P53ZLS285ZGYVC5ZW66CNSQB3C6XESMB9GFU2DQ6D5Z3QYR7UGRXKX7UVRJBTNWSG27NQQGTRA
