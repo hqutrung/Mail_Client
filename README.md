@@ -1,4 +1,4 @@
-# Ứng dụng mail++ - Thư điện tử của bạn
+﻿# Ứng dụng mail++ - Thư điện tử của bạn
 ## I.Giới thiệu 
 Mail ++ là một chương trình nhằm giúp người sử dụng có thể sử dụng việc gửi thư điện tử một cách nhanh chóng và thuận tiện. Chương trình đã lược bỏ đi một số những tác vụ không được dùng nhiều ở các chương trình Mail đã có trước đó. Ưu tiên việc sử dụng dễ dàng và hiệu quả cho người sử dụng được tối ưu nhất có thể.
 Ngôn ngữ lập trình: C#
@@ -32,6 +32,7 @@ Cuối cùng chọn vào Install và đợi trong giây lát
 Cuối cùng chọn finish và sử dụng ứng dụng thôi nào
 ##VI. Sử dụng ứng dụng
 * **Bước 1:** Chạy ứng dụng sau khi đã được cài đặt ở trên thiết bị của bạn
+	![IMG_1](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/1.png)
 * **Bước 2:** Ứng dụng sẽ hiện ra màn hình đăng nhập 
 **Lưu ý**: * Để sử dụng bạn phải truy cập vào link https://myaccount.google.com/lesssecureapps và chọn chế độ bật cho tài khoản ( Nếu bạn chưa có tài khoản hãy đăng ký tài khoản sau đó truy cập vào đây)
             * Vì đây là ứng dụng riêng nên các bạn chỉ được trải nghiệm 30 ngày sau đó các bạn phải trả phí. Phía dưới là một số key dùng thử dành cho các bạn
