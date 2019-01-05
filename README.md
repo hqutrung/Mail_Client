@@ -30,7 +30,7 @@ và tiếp tục các bước dưới đây để
 * Cuối cùng chọn vào Install và đợi trong giây lát
  * ![IMG_4](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/4.png)
 * Cuối cùng chọn finish và sử dụng ứng dụng thôi nào
-##VI. Sử dụng ứng dụng
+## VI. Sử dụng ứng dụng
 * **Bước 1:** Chạy ứng dụng sau khi đã được cài đặt ở trên thiết bị của bạn
 * **Bước 2:** Ứng dụng sẽ hiện ra màn hình đăng nhập 
 **Lưu ý**: * Để sử dụng bạn phải truy cập vào link https://myaccount.google.com/lesssecureapps và chọn chế độ bật cho tài khoản ( Nếu bạn chưa có tài khoản hãy đăng ký tài khoản sau đó truy cập vào đây)
