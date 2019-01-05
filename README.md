@@ -9,6 +9,7 @@ Chương trình Mail++ là một chương trình thuận tiện cho người d�
 * Đăng nhập tài khoản
 * Gửi thư cho một hay nhiều người
 * Gửi đính kèm các tệp, văn bản, hình ảnh ...
+
 Chương trình có những đặc điểm nổi bật như:
 * Không tốn nhiều thời gian để gửi 
 * Gửi đồng thời nhiều nội dung trong một lần gửi
