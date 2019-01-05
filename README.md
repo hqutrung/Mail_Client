@@ -36,7 +36,9 @@ và tiếp tục các bước dưới đây để
 **Lưu ý**: * Để sử dụng bạn phải truy cập vào link https://myaccount.google.com/lesssecureapps và chọn chế độ bật cho tài khoản ( Nếu bạn chưa có tài khoản hãy đăng ký tài khoản sau đó truy cập vào đây)
             * Vì đây là ứng dụng riêng nên các bạn chỉ được trải nghiệm 30 ngày sau đó các bạn phải trả phí. Phía dưới là một số key dùng thử dành cho các bạn
  * ![IMG_5](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/5.png)
-*Sau khi truy cập thì đây sẽ là giao diện chính của ứng dụng
+ 
+Sau khi truy cập thì đây sẽ là giao diện chính của ứng dụng
+
  * ![IMG_6](https://github.com/trunghq17520184/Mail_Client/raw/master/resource/6.png)
 ## VII. Một số key dùng thử
 * HVS28FBJ38P53ZLS285ZGYVC5ZW66CNSQB3C6XESMB9GFU2DQ6D5Z3QYR7UGRXKX7UVRJBTNWSG27NQQGTRA
